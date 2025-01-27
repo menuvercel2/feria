@@ -126,6 +126,78 @@
         }
 
 
+        @media screen and (max-width: 768px) {
+            .game-title {
+                font-size: 28px;
+                /* Tamaño más pequeño para móviles */
+                margin-bottom: 20px;
+            }
+
+            .arcade-box {
+                padding: 20px;
+                width: 85%;
+            }
+
+            #instructions {
+                font-size: 12px;
+                margin-bottom: 20px;
+                line-height: 1.8;
+            }
+
+            #difficultySelect {
+                padding: 10px;
+                font-size: 12px;
+                width: 90%;
+            }
+
+            .gameButton {
+                padding: 15px 30px;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+
+        /* Para pantallas muy pequeñas */
+        @media screen and (max-width: 320px) {
+            .game-title {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .arcade-box {
+                padding: 15px;
+            }
+
+            #instructions {
+                font-size: 10px;
+                line-height: 1.6;
+            }
+
+            .gameButton {
+                padding: 12px 24px;
+                font-size: 12px;
+            }
+        }
+
+        /* Para ajustar la altura en pantallas pequeñas */
+        @media screen and (max-height: 600px) {
+            .game-title {
+                margin-bottom: 10px;
+            }
+
+            .arcade-box {
+                padding: 15px;
+            }
+
+            #instructions {
+                margin-bottom: 15px;
+            }
+
+            .gameButton {
+                margin-top: 15px;
+            }
+        }
+
         #score,
         #lives {
             color: #e3f2fd;
@@ -166,6 +238,7 @@
 
         .game-title {
             font-size: 48px;
+            /* Tamaño para desktop */
             color: #e3f2fd;
             text-shadow:
                 4px 4px 0 #002171,
@@ -175,6 +248,7 @@
                 0 0 20px #bbdefb;
             margin-bottom: 40px;
             animation: glow 2s ease-in-out infinite alternate;
+            text-align: center;
         }
 
         .arcade-box {
@@ -185,6 +259,7 @@
             box-shadow: 0 0 90px #e3f2fd;
             max-width: 500px;
             width: 90%;
+            margin: 0 auto;
         }
 
         #instructions {
